@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy files into container
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir -r sample.txt
+RUN pip install --no-cache-dir -r script.sh
 
 COPY app.py .
 
